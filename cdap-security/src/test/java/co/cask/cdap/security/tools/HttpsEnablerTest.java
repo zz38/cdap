@@ -54,7 +54,7 @@ public class HttpsEnablerTest {
   /**
    * Testing https server with the client not trusting the server.
    */
-  @Test (expected = IOException.class)
+  @Test (expected = SSLException.class)
   public void testInvalidHttpsServer() throws Exception {
     testServer(false, false);
   }
@@ -70,7 +70,7 @@ public class HttpsEnablerTest {
   /**
    * Testing client side authentication with an untrusted client side cert.
    */
-  @Test (expected = IOException.class)
+  @Test (expected = SSLException.class)
   public void testInvalidClientAuthentication() throws Exception {
     testClientAuth(true, false);
   }
@@ -78,7 +78,7 @@ public class HttpsEnablerTest {
   /**
    * Testing client side authentication with the client missing the cert.
    */
-  @Test (expected = IOException.class)
+  @Test (expected = SSLException.class)
   public void testMissingClientAuthentication() throws Exception {
     testClientAuth(false, true);
   }
