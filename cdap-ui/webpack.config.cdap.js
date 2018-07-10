@@ -50,6 +50,10 @@ var plugins = [
       to: './fonts/'
     },
     {
+      from: path.resolve(__dirname, 'node_modules', 'shepherd.js'),
+      to: './modules/'
+    },
+    {
       from: './styles/img',
       to: './img/'
     }

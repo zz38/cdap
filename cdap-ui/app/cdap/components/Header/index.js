@@ -172,6 +172,7 @@ export default class Header extends Component {
               isNativeLink={this.props.nativeLink}
               to={this.props.nativeLink ? `/cdap${dataprepUrl}` : dataprepUrl}
               isActive={this.isDataPrepActive}
+              id="dataprep-navbar"
             >
               {T.translate(`features.Navbar.Dataprep`)}
             </NavLinkWrapper>

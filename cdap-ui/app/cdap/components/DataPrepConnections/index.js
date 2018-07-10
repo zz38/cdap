@@ -45,6 +45,7 @@ import {objectQuery, preventPropagation} from 'services/helpers';
 import Helmet from 'react-helmet';
 import LoadingSVGCentered from 'components/LoadingSVGCentered';
 import queryString from 'query-string';
+import {startTour} from 'components/DataPrepConnections/Tour';
 
 require('./DataPrepConnections.scss');
 const PREFIX = 'features.DataPrepConnections';
@@ -129,6 +130,10 @@ export default class DataPrepConnections extends Component {
         }
       });
     }
+  }
+
+  componentDidMount() {
+    startTour();
   }
 
   componentWillUnmount() {

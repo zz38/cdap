@@ -110,6 +110,7 @@ export default class AddConnection extends Component {
         target={ADD_CONNECTION_ID}
         toggle={this.toggleConnectionOptions}
         tether={tetherConfig}
+        id="dataprep-add-connection-popover"
       >
         <PopoverTitle>
           {T.translate(`${PREFIX}.Popover.title`)}
