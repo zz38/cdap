@@ -42,8 +42,6 @@ UI Customization
 ---------------------------------
 Certain properties in the UI can be customized. The ``ui/server/config/themes/default.json`` file contains these properties, along with their default values. As of version 1.0, here is the list of properties that can be customized, and their expected values:
 
-.. highlight:: json-ellipsis
-
 .. list-table::
    :widths: 15 30 20 30
    :header-rows: 1
@@ -256,6 +254,8 @@ Certain properties in the UI can be customized. The ``ui/server/config/themes/de
         .. parsed-literal::
 
           "add-namespace": true
+
+.. highlight:: xml
 
 However, it is not recommended to overwrite values in ``default.json`` for customizations, since these values will be reverted when CDAP is upgraded. Instead of doing this, the user is encouraged to create their own theme file using this spec, and link to this file. To do so, add this property to ``cdap-site.xml``::
 
