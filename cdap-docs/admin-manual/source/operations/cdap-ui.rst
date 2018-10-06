@@ -60,7 +60,7 @@ Certain properties in the UI can be customized. The ``ui/server/config/themes/de
 
         .. parsed-literal::
 
-        "brand-primary-color": "#3b78e7"
+          "brand-primary-color": "#3b78e7"
 
 
    * - ``navbar-color``
@@ -70,7 +70,7 @@ Certain properties in the UI can be customized. The ``ui/server/config/themes/de
 
         .. parsed-literal::
 
-        "navbar-color": "rgba(51, 51, 51, 1)"
+          "navbar-color": "rgba(51, 51, 51, 1)"
 
    * - ``font-family``
      - No attributes
@@ -79,7 +79,7 @@ Certain properties in the UI can be customized. The ``ui/server/config/themes/de
 
         .. parsed-literal::
 
-        "font-family": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
+          "font-family": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
 
    * - ``product-name``
      - No attributes
@@ -88,7 +88,7 @@ Certain properties in the UI can be customized. The ``ui/server/config/themes/de
 
         .. parsed-literal::
 
-        "product-name": "CDAP"
+          "product-name": "CDAP"
 
    * - ``product-description``
      - No attributes
@@ -97,7 +97,7 @@ Certain properties in the UI can be customized. The ``ui/server/config/themes/de
 
         .. parsed-literal::
 
-        "product-description": "CDAP is an open source framework that simplifies data application development, data integration, and data management."
+          "product-description": "CDAP is an open source framework that simplifies data application development, data integration, and data management."
 
    * - ``product-logo-navbar``
      - - ``type``:
@@ -145,7 +145,7 @@ Certain properties in the UI can be customized. The ``ui/server/config/themes/de
 
         .. parsed-literal::
 
-        "favicon-path": "/cdap_assets/img/favicon.png"
+          "favicon-path": "/cdap_assets/img/favicon.png"
 
 
    * - ``footer-text``
@@ -155,7 +155,7 @@ Certain properties in the UI can be customized. The ``ui/server/config/themes/de
 
         .. parsed-literal::
 
-        "footer-text": "Licensed under the Apache License, Version 2.0"
+          "footer-text": "Licensed under the Apache License, Version 2.0"
 
    * - ``footer-link``
      - No attributes
@@ -164,7 +164,7 @@ Certain properties in the UI can be customized. The ``ui/server/config/themes/de
 
         .. parsed-literal::
 
-        "footer-link": "https://www.apache.org/licenses/LICENSE-2.0"
+          "footer-link": "https://www.apache.org/licenses/LICENSE-2.0"
 
    * - ``dashboard``
      - No attributes
@@ -173,7 +173,7 @@ Certain properties in the UI can be customized. The ``ui/server/config/themes/de
 
         .. parsed-literal::
 
-        "dashboard": true
+          "dashboard": true
 
    * - ``reports``
      - No attributes
@@ -182,7 +182,7 @@ Certain properties in the UI can be customized. The ``ui/server/config/themes/de
 
         .. parsed-literal::
 
-        "reports": true
+          "reports": true
 
    * - ``data-prep``
      - No attributes
@@ -191,7 +191,7 @@ Certain properties in the UI can be customized. The ``ui/server/config/themes/de
 
         .. parsed-literal::
 
-        "data-prep": true
+          "data-prep": true
 
    * - ``pipelines``
      - No attributes
@@ -200,7 +200,7 @@ Certain properties in the UI can be customized. The ``ui/server/config/themes/de
 
         .. parsed-literal::
 
-        "pipelines": true
+          "pipelines": true
 
    * - ``analytics``
      - No attributes
@@ -209,7 +209,7 @@ Certain properties in the UI can be customized. The ``ui/server/config/themes/de
 
         .. parsed-literal::
 
-        "analytics": true
+          "analytics": true
 
    * - ``rules-engine``
      - No attributes
@@ -218,7 +218,7 @@ Certain properties in the UI can be customized. The ``ui/server/config/themes/de
 
         .. parsed-literal::
 
-        "rules-engine": true
+          "rules-engine": true
 
    * - ``metadata``
      - No attributes
@@ -227,7 +227,7 @@ Certain properties in the UI can be customized. The ``ui/server/config/themes/de
 
         .. parsed-literal::
 
-        "metadata": true
+          "metadata": true
 
    * - ``hub``
      - No attributes
@@ -236,7 +236,7 @@ Certain properties in the UI can be customized. The ``ui/server/config/themes/de
 
         .. parsed-literal::
 
-        "hub": true
+          "hub": true
 
    * - ``ingest-data``
      - No attributes
@@ -245,7 +245,7 @@ Certain properties in the UI can be customized. The ``ui/server/config/themes/de
 
         .. parsed-literal::
 
-        "ingest-data": true
+          "ingest-data": true
 
 
    * - ``add-namespace``
@@ -255,7 +255,7 @@ Certain properties in the UI can be customized. The ``ui/server/config/themes/de
 
         .. parsed-literal::
 
-        "add-namespace": true
+          "add-namespace": true
 
 However, it is not recommended to overwrite values in ``default.json`` for customizations, since these values will be reverted when CDAP is upgraded. Instead of doing this, the user is encouraged to create their own theme file using this spec, and link to this file. To do so, add this property to ``cdap-site.xml``::
 
